@@ -1,0 +1,130 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #2148C0;
+    background-image: url(../img/BG.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Signup{
+    height: 419px;
+    width: 300px;
+    margin-top: -100px;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 28px;
+    color: #2148C0;
+}
+
+/* .forgot-password{
+    margin-left: 174.42px;
+    color: #ffffff;
+    text-decoration: none;
+} */
+
+.groupimg{
+    width: 119.39px;
+    height: 97.85px;
+    margin-left: 90.31px;
+}
+
+.mb-3{
+    margin-top: 70px;
+}
+
+.lock, .user{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.fullname, .username, .email{
+    background: #2148C0;
+    border: 0;
+    width: 100%;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+::placeholder{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.username{
+    background: url(../img/user.png) no-repeat scroll 12.5px 12.5px;
+    background-size: 20px;
+    padding-left: 42.5px;
+    margin-top: 25px;
+}
+
+.password{
+    background: none;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+}
+
+.signup-direct{
+    margin-left: 113.53px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fullname{
+    background: url(../img/user.png) no-repeat scroll 12.5px 12.5px;
+    background-size: 20px;
+    padding-left: 42.5px;
+    margin-top: 50px;
+}
+
+.email{
+    background: url(../img/user.png) no-repeat scroll 12.5px 12.5px;
+    background-size: 20px;
+    padding-left: 42.5px;
+    margin-top: 25px;
+}
+
+#eye-show, #eye-hide{
+    height: 25px;
+}
+
+#eye-show-c, #eye-hide-c{
+    height: 25px;
+}
+
+#eye-hide-c{
+    display: none;
+}
+
+#eye-hide{
+    display: none;
+}
+
+.password-div{
+    background: #2148C0;
+    border: 0;
+    width: 100%;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #ffffff;
+    background: url(../img/lock.png) no-repeat scroll 12.5px 12.5px;
+    background-size: 20px;
+    padding-left: 42.5px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
