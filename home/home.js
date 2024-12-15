@@ -154,3 +154,14 @@ for (let i = 0; i < productsChunks.length; i++) {
   elementChildProducts += `<div class="featured-products">${elementChildDiv}</div>`;
 }
 productsDiv.innerHTML = elementChildProducts;
+
+// document.getElementById('search-box').addEventListener('submit', function (event) {
+//   event.preventDefault(); // Prevent form submission
+//   const query = document.getElementById('searchInput').value.trim();
+//   if (query) {
+//       alert(`Searching for: ${query}`);
+//       // Implement your search logic here
+//   } else {
+//       alert('Please enter a search term.');
+//   }
+// });
