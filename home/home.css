@@ -95,6 +95,8 @@ body{
 }
 
 .fan{
+    border: 0;
+    background-color: #040029;
     text-decoration: none;
     color: #ffffff;
 }
@@ -130,7 +132,7 @@ body{
 
 .account{
     height: 42.5px;
-    width: 42.5px;
+    width: 43px;
     background: url(../img/../img/user-home.png) no-repeat scroll 11px 10px;
     background-size: 20px;
 }
@@ -139,14 +141,14 @@ body{
     background: url(../img/../img/heart.png) no-repeat scroll 11px 11px;
     background-size: 20px;
     height: 42.5px;
-    width: 42.5px;
+    width: 45px;
 }
 
 .cart{
     background: url(../img/../img/../img/shopping-cart.png) no-repeat scroll 11px 11px;
     background-size: 20px;
     height: 42.5px;
-    width: 110px;
+    width: 45px;
 }
 
 h3{
@@ -204,4 +206,106 @@ h3{
 
 .search-results{
     border: 1px solid gray;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f6f5a1;
+    border-radius: 0 0 10px 10px;
+}
+
+.icon {
+    background: transparent;
+    border: 0;
+    padding: 10px;
+}
+
+.icon>img {
+    width: 25px;
+}
+
+#name_app {
+    display: none;
+    font-size: 30px;
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 2px 2px #bfacac;
+}
+
+#chatbox {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0;
+}
+
+#messages {
+    height: 250px;
+    overflow-y: scroll;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#input-form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+#input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#send-button {
+    width: 10%;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+}
+
+#send-button>img {
+    width: 30px;
+    height: 30px;
+}
+
+.message {
+    width: -webkit-fill-available;
+}
+
+.message span {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.user span {
+    background: #578b83;
+}
+
+.model span {
+    background: #e4e6e7c2;
+}
+
+.user {
+    display: flex;
+    justify-content: right;
+}
+
+.model {
+    display: flex;
+    justify-content: left;
 }

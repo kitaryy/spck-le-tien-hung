@@ -22,8 +22,8 @@
                 ✔️ Free shipping for orders over 20$!
             </div>
             <div class="sideup">
-                <a class="fan" href="">FAQs</a>
-                <a class="fan" href="">Need help?</a>
+                <button type="button" class="fan" id="FanId">FAQs</button>
+                <button type="button" class="fan" id="FanId2">Need help?</button>
             </div>
         </div>
         <!-- SECOND PART -->
@@ -59,9 +59,9 @@
         <h1 id="product-name"></h1>
         <div class="below-title">
             <h4 style="color: gray;" id="product-category"></h4>
-            <div>
+            <div class="groupbtn">
                 <button type="button" class="btn btn-primary liked"></button>
-                <button class="atl"><img class="list-img" src="../img/categories.png" alt=""><b>ADD TO CART</b></button>
+                <button class="atl"><img class="list-img" src="../img/shopping-cart.png" ><b>Add To Cart</b></button>
             </div>
         </div>
 
@@ -159,6 +159,28 @@
 
     </div>
     <!-- END OF FOOTER -->
+
+    <div id="chatbox" class="chatbox">
+        <div class="menu">
+            <button class="icon" id="menu">
+                <img src="../img/close.png" />
+            </button>
+            <button class="icon" id="add">
+                <img src="https://cdn-icons-png.flaticon.com/128/3161/3161837.png" />
+            </button>
+            <button class="icon" id="delete">
+                <img src="https://cdn-icons-png.flaticon.com/128/5135/5135618.png" />
+            </button>
+        </div>
+        <h1 id="name_app">Liorion</h1>
+        <div id="messages"></div>
+        <form id="input-form" onsubmit="return false;">
+            <input type="text" id="input" placeholder="Nhập nội dung...">
+            <button type="submit" id="send-button">
+                <img src="https://cdn-icons-png.flaticon.com/128/5264/5264505.png" />
+            </button>
+        </form>
+      </div>
 </body>
 <script src="./pen.js"></script>
 
