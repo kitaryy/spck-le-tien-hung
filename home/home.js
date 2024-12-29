@@ -251,13 +251,13 @@ function addMessage(message, role) {
 
 const chatbox = document.getElementById("chatbox");
 function handleShowChatbox(){
-chatbox.style.opacity = 1;
+chatbox.style.display = "block";
 }
 const ShowChatbox = document.getElementById("FanId");
 ShowChatbox.addEventListener("click", handleShowChatbox);
 
 function handleHideChatbox(){
-  chatbox.style.opacity = 0;
+  chatbox.style.display = "none";
 }
 const HideChatbox = document.getElementById("menu");
 HideChatbox.addEventListener("click", handleHideChatbox)

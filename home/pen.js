@@ -126,23 +126,28 @@ function addMessage(message, role) {
 
 const chatbox = document.getElementById("chatbox");
 function handleShowChatbox(){
-chatbox.style.opacity = 1;
+chatbox.style.display = "block";
 }
 const ShowChatbox = document.getElementById("FanId");
 ShowChatbox.addEventListener("click", handleShowChatbox);
 
 function handleHideChatbox(){
-  chatbox.style.opacity = 0;
+  chatbox.style.display = "none";
 }
 const HideChatbox = document.getElementById("menu");
 HideChatbox.addEventListener("click", handleHideChatbox);
 
 function handleAddToCart(){
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    cart.push({
-        ...product,
-        quantity: 1
-    });
+    const productInCart = cart.find(item => item.id === product.id);
+    if(productInCart){
+        productInCart.quantity++;
+    }else{
+        cart.push({
+            ...product,
+            quantity: 1
+        });
+    }
     localStorage.setItem('cart', JSON.stringify(cart));
    alert("Đã thêm vào giỏ hàng!");
 }
