@@ -163,27 +163,8 @@ const deleteButton = document.getElementById("delete");
 
 if (deleteButton) {
     deleteButton.addEventListener("click", () => {
-        chatboxDiv.innerHTML = `
- <div class="menu">
-      <button class="icon" id="menu">
-          <img src="../img/close.png" />
-      </button>
-      <button class="icon" id="add">
-          <img src="https://cdn-icons-png.flaticon.com/128/3161/3161837.png" />
-      </button>
-      <button class="icon" id="delete">
-          <img src="https://cdn-icons-png.flaticon.com/128/5135/5135618.png" />
-      </button>
-  </div>
-  <h1 id="name_app">Liorion</h1>
-  <div id="messages"></div>
-  <form id="input-form" onsubmit="return false;">
-      <input type="text" id="input" placeholder="Nhập nội dung...">
-      <button type="submit" id="send-button">
-          <img src="https://cdn-icons-png.flaticon.com/128/5264/5264505.png" />
-      </button>
-  </form>
-`;
+        const boxMessage = document.getElementById("messages");
+        boxMessage.innerHTML = "";
         localStorage.setItem('liorion_ai', "[]");
         alert("Đã xóa hết dữ liệu!");
     });
@@ -217,7 +198,7 @@ sendButtonEl.addEventListener("click", () => {
 
     const headers = {
         "Content-Type": "application/json",
-        "X-Goog-Api-Key": "AIzaSyCU2n-SdwOsyoXeUw4hgXbwnuAZAEO6PcI", // API KEY
+        "X-Goog-Api-Key": "AIzaSyCU2n-SdwOsyoXeUw4hgXbwnuAZAEO6PcI",
         "Connection": "keep-alive"
     };
 

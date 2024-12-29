@@ -243,6 +243,7 @@ h3{
     right: 20px;
     z-index: 1000;
     opacity: 0;
+    background-color: #ffffff;
 }
 
 #messages {
