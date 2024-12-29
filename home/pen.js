@@ -135,4 +135,17 @@ function handleHideChatbox(){
   chatbox.style.opacity = 0;
 }
 const HideChatbox = document.getElementById("menu");
-HideChatbox.addEventListener("click", handleHideChatbox)
+HideChatbox.addEventListener("click", handleHideChatbox);
+
+function handleAddToCart(){
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({
+        ...product,
+        quantity: 1
+    });
+    localStorage.setItem('cart', JSON.stringify(cart));
+   alert("Đã thêm vào giỏ hàng!");
+}
+
+const addToCart = document.getElementById("add-to-cart");
+addToCart.addEventListener("click", handleAddToCart);
