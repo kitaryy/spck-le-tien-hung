@@ -31,12 +31,12 @@ const listProduct = [
   },
   {
       "id": 4,
-      "name": "FriXion® Ball Clicker Retractable Erasable Gel Ink Pen",
+      "name": "FriXion Point Synergy Clicker",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
       "price": "$2.93",
       "image": "../img/pen/pen4.jpg",
-      "category": "#FriXion IFXC",
+      "category": "#FriXion Energy IFXY",
       "img_pricing": "../img/pricing/pen4.png"
   },
   {
