@@ -388,3 +388,16 @@ h3 {
     display: flex;
     justify-content: left;
 }
+
+#heartred {
+    display: none;
+}
+
+#heartblack {
+    display: block;
+}
+
+.heart {
+    height: 32px;
+    width: 32px;
+}

@@ -320,7 +320,7 @@ h3{
 .shoppingcart {
     border: 1px solid #ffffff;
     background: #ffffff;
-    height: 700px;
+    height: 900px;
     border-radius: 20px;
     padding: 50px;
     display: flex;
@@ -351,7 +351,11 @@ h3{
 
 .checkout-method {
     width: 30%;
-    border: 1px solid black;
+    border: 1px solid #565ABB;
+    border-radius: 20px;
+    background-color: #565ABB;
+    padding: 20px;
+    padding-top: 30px;
 }
 
 .cart-title {
@@ -371,7 +375,8 @@ h3{
     justify-content: space-between;
     height: 140px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
 
 }
 
@@ -382,4 +387,112 @@ h3{
 
 .remove {
     height: 50px;
+}
+
+.card-details {
+    color: white;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.avatar-user {
+    height: 60px;
+    border-radius: 9px;
+}
+
+.upper-checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-type {
+    color: white;
+    font-size: large;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.payment {
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+    border: 0px solid #739AFF;
+}
+
+.name {
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    border: 0px solid black;
+    padding: 10px;
+    padding-left: 20px;
+    background: #6268C6;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: #C4C4C4;
+}
+
+::placeholder{
+    color: #C4C4C4;
+}
+
+.more-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-div {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.cvv-div {
+    width: 50%;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line-checkout {
+    width: 100%;
+    border: 1px solid #5F65C3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.last {
+    margin-bottom: 50px;
+}
+
+.checkout-text {
+    color: white;
+    font-size: 125%;
+}
+
+.checkout-btn {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    border: 1px solid #4DE1C1;
+    background-color: #4DE1C1;
+    border-radius: 12px;
+    height: 60px;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

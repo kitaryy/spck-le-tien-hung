@@ -135,3 +135,14 @@ function handleAddToCart(){
 
 const addToCart = document.getElementById("add-to-cart");
 addToCart.addEventListener("click", handleAddToCart);
+
+document.getElementById("heartblack").addEventListener('click', function () {
+    document.getElementById("heartblack").style.display = "none";
+    document.getElementById("heartred").style.display = "block";
+});
+
+document.getElementById("heartred").addEventListener('click', function () {
+    document.getElementById("heartred").style.display = "none";
+    document.getElementById("heartblack").style.display = "block";
+});
+
