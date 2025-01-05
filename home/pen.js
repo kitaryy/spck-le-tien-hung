@@ -135,28 +135,53 @@ function handleAddToCart(){
 const addToCart = document.getElementById("add-to-cart");
 addToCart.addEventListener("click", handleAddToCart);
 
-const heart = document.getElementById("heart");
-let user = JSON.parse(localStorage.getItem('accountActive'));
-let favorite = false;
-function handleFavorite() {
-    if (favorite) {
-        heart.src = "../img/heart.png";
-        // Xoá phần tử id product khỏi array favorite
-        // updateAccountActive(user.username);
+
+
+
+function checkFavorite() {
+    const Fav = JSON.parse(localStorage.getItem('Fav')) || [];
+    const productInFav = Fav.find(item => item.id === product.id);
+
+    if (productInFav) {
+
+        heart.src = "../img/heart (1).png"; 
     } else {
+
+        heart.src = "../img/heart.png"; 
+    }
+}
+
+
+function handleAddToFav() {
+    const Fav = JSON.parse(localStorage.getItem('Fav')) || [];
+    const productInFav = Fav.find(item => item.id === product.id);
+
+    const heart = document.getElementById("heart"); 
+
+    if (productInFav) {
+        const updatedFav = Fav.filter(item => item.id !== product.id); 
+
+
+        localStorage.setItem('Fav', JSON.stringify(updatedFav));
+
+        heart.src = "../img/heart.png";
+    } else {
+
+        Fav.push({
+            id: product.id,
+            name: product.name,
+            image: product.image,
+            price: product.price
+        });
+
+
+        localStorage.setItem('Fav', JSON.stringify(Fav));
+        
         heart.src = "../img/heart (1).png";
-        // Thêm phần tử id product vào array favorite
-        // updateAccountActive(user.username);
-    }
-    favorite = !favorite;
-}
-heart.addEventListener("click", handleFavorite)
-
-
-function updateAccountActive(username) {
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].username == username) {
-            localStorage.setItem('accountActive', JSON.stringify(users[i]));
-        };
     }
 }
+
+const addToFav = document.getElementById("heart");
+addToFav.addEventListener("click", handleAddToFav);
+
+checkFavorite();

@@ -7,7 +7,8 @@ const listProduct = [
       "price": 2.93,
       "image": "../img/pen/pen1.jpg",
       "category": "#FriXion IFXC",
-      "img_pricing": "../img/pricing/pen1.png"
+      "img_pricing": "../img/pricing/pen1.png",
+      "hyperlink": "../home/pen.html?id=1"
   },
   {
       "id": 2,
@@ -17,7 +18,8 @@ const listProduct = [
       "price": 2.26,
       "image": "../img/pen/pen2.jpg",
       "category": "#G2 IG2-7",
-      "img_pricing": "../img/pricing/pen2.png"
+      "img_pricing": "../img/pricing/pen2.png",
+      "hyperlink": "../home/pen.html?id=2"
   },
   {
       "id": 3,
@@ -27,7 +29,8 @@ const listProduct = [
       "price": 1.72,
       "image": "../img/pen/pen3.jpg",
       "category": "#FriXion IFXL",
-      "img_pricing": "../img/pricing/pen3.png"
+      "img_pricing": "../img/pricing/pen3.png",
+      "hyperlink": "../home/pen.html?id=3"
   },
   {
       "id": 4,
@@ -37,7 +40,8 @@ const listProduct = [
       "price": 2.93,
       "image": "../img/pen/pen4.jpg",
       "category": "#FriXion Energy IFXY",
-      "img_pricing": "../img/pricing/pen4.png"
+      "img_pricing": "../img/pricing/pen4.png",
+      "hyperlink": "../home/pen.html?id=4"
   },
   {
       "id": 5,
@@ -47,7 +51,8 @@ const listProduct = [
       "price": 26.44,
       "image": "../img/pen/pen5.jpg",
       "category": "#MR Retro Pop Collection IMPRB",
-      "img_pricing": "../img/pricing/pen5.png"
+      "img_pricing": "../img/pricing/pen5.png",
+      "hyperlink": "../home/pen.html?id=5"
   },
   {
       "id": 6,
@@ -57,7 +62,8 @@ const listProduct = [
       "price": 2.76,
       "image": "../img/pen/pen6.jpg",
       "category": "#B2P Colors IB2C",
-      "img_pricing": "../img/pricing/pen6.png"
+      "img_pricing": "../img/pricing/pen6.png",
+      "hyperlink": "../home/pen.html?id=6"
   },
   {
       "id": 7,
@@ -67,7 +73,8 @@ const listProduct = [
       "price": 2.30,
       "image": "../img/pen/pen7.jpg",
       "category": "#Precise V5 Cap Imprint IPV5C",
-      "img_pricing": "../img/pricing/pen7.png"
+      "img_pricing": "../img/pricing/pen7.png",
+      "hyperlink": "../home/pen.html?id=7"
   },
   {
       "id": 8,
@@ -77,7 +84,8 @@ const listProduct = [
       "price": 150.08,
       "image": "../img/pen/pen8.jpg",
       "category": "#G2 Tubs I5609",
-      "img_pricing": "../img/pricing/pen8.png"
+      "img_pricing": "../img/pricing/pen8.png",
+      "hyperlink": "../home/pen.html?id=8"
   },
   {
       "id": 9,
@@ -87,7 +95,8 @@ const listProduct = [
       "price": 4.62,
       "image": "../img/pen/pen9.jpg",
       "category": "#G2 PenStylus ITG2",
-      "img_pricing": "../img/pricing/pen9.png"
+      "img_pricing": "../img/pricing/pen9.png",
+      "hyperlink": "../home/pen.html?id=9"
   },
   {
       "id": 10,
@@ -97,7 +106,8 @@ const listProduct = [
       "price": 2.26,
       "image": "../img/pen/pen10.jpg",
       "category": "#G2 Mechanical Pencil IHG7",
-      "img_pricing": "../img/pricing/pen10.png"
+      "img_pricing": "../img/pricing/pen10.png",
+      "hyperlink": "../home/pen.html?id=10"
   },
   {
       "id": 11,
@@ -107,7 +117,8 @@ const listProduct = [
       "price": 2.76,
       "image": "../img/pen/pen11.jpg",
       "category": "#B2P Gel IB2P",
-      "img_pricing": "../img/pricing/pen11.png"
+      "img_pricing": "../img/pricing/pen11.png",
+      "hyperlink": "../home/pen.html?id=11"
   },
   {
       "id": 12,
@@ -117,7 +128,8 @@ const listProduct = [
       "price": 2.30,
       "image": "../img/pen/pen6.jpg",
       "category": "#Precise IPV7",
-      "img_pricing": "../img/pricing/pen12.png"
+      "img_pricing": "../img/pricing/pen12.png",
+      "hyperlink": "../home/pen.html?id=12"
   },
 ];
 
@@ -148,7 +160,7 @@ for (let i = 0; i < productsChunks.length; i++) {
     <div class="pen-div">
       <img src="${productsChunks[i][j].image}" class="penstock pen${i+1}" alt="">
       <a href="./pen.html?id=${productsChunks[i][j].id}" class="pen1-link">${productsChunks[i][j].name}</a>
-      <p>${productsChunks[i][j].price}</p>
+      <p>$${productsChunks[i][j].price}</p>
     </div>`;
   }
   elementChildProducts += `<div class="featured-products">${elementChildDiv}</div>`;

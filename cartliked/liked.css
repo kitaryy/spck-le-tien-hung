@@ -515,3 +515,12 @@ h3{
 .to-cart:hover {
     background-color: #578b83;
 }
+
+.itemName {
+    text-decoration: none;
+    color: black;
+}
+
+.itemName:hover {
+    color: #298a75;
+}
