@@ -4,7 +4,7 @@ const listProduct = [
       "name": "FriXion® Ball Clicker Retractable Erasable Gel Ink Pen",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$2.93",
+      "price": 2.93,
       "image": "../img/pen/pen1.jpg",
       "category": "#FriXion IFXC",
       "img_pricing": "../img/pricing/pen1.png"
@@ -14,7 +14,7 @@ const listProduct = [
       "name": "G2® Premium Gel Roller Pen (0.7mm)",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$2.26",
+      "price": 2.26,
       "image": "../img/pen/pen2.jpg",
       "category": "#G2 IG2-7",
       "img_pricing": "../img/pricing/pen2.png"
@@ -24,7 +24,7 @@ const listProduct = [
       "name": "FriXion® Light Erasable Highlighter",
       "production_time": "10 working days",
       "manufacture_country": "Japan",
-      "price": "$1.72",
+      "price": 1.72,
       "image": "../img/pen/pen3.jpg",
       "category": "#FriXion IFXL",
       "img_pricing": "../img/pricing/pen3.png"
@@ -34,7 +34,7 @@ const listProduct = [
       "name": "FriXion Point Synergy Clicker",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$2.93",
+      "price": 2.93,
       "image": "../img/pen/pen4.jpg",
       "category": "#FriXion Energy IFXY",
       "img_pricing": "../img/pricing/pen4.png"
@@ -44,7 +44,7 @@ const listProduct = [
       "name": "MR Retro Pop Collection Gel Roller Pen",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$26.44",
+      "price": 26.44,
       "image": "../img/pen/pen5.jpg",
       "category": "#MR Retro Pop Collection IMPRB",
       "img_pricing": "../img/pricing/pen5.png"
@@ -54,7 +54,7 @@ const listProduct = [
       "name": "B2P Colors Gel Roller Pen - 4 Color Label",
       "production_time": "17 working days",
       "manufacture_country": "Japan",
-      "price": "$2.76",
+      "price": 2.76,
       "image": "../img/pen/pen6.jpg",
       "category": "#B2P Colors IB2C",
       "img_pricing": "../img/pricing/pen6.png"
@@ -64,7 +64,7 @@ const listProduct = [
       "name": "Precise® V5 Premium Rolling Ball Pen with Cap Imprint",
       "production_time": "10 working days",
       "manufacture_country": "Japan",
-      "price": "$2.30",
+      "price": 2.30,
       "image": "../img/pen/pen7.jpg",
       "category": "#Precise V5 Cap Imprint IPV5C",
       "img_pricing": "../img/pricing/pen7.png"
@@ -74,7 +74,7 @@ const listProduct = [
       "name": "G2® Premium Gel Roller Pen - 72 Count Tub",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$150.08",
+      "price": 150.08,
       "image": "../img/pen/pen8.jpg",
       "category": "#G2 Tubs I5609",
       "img_pricing": "../img/pricing/pen8.png"
@@ -84,7 +84,7 @@ const listProduct = [
       "name": "G2® Pen Stylus",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$4.62",
+      "price": 4.62,
       "image": "../img/pen/pen9.jpg",
       "category": "#G2 PenStylus ITG2",
       "img_pricing": "../img/pricing/pen9.png"
@@ -94,7 +94,7 @@ const listProduct = [
       "name": "G2® Mechanical Pencil",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$2.26",
+      "price": 2.26,
       "image": "../img/pen/pen10.jpg",
       "category": "#G2 Mechanical Pencil IHG7",
       "img_pricing": "../img/pricing/pen10.png"
@@ -104,7 +104,7 @@ const listProduct = [
       "name": "B2P Bottle 2 Pen Gel Roller Pen - 4 Color Label",
       "production_time": "17 working days",
       "manufacture_country": "Japan",
-      "price": "$2.76",
+      "price": 2.76,
       "image": "../img/pen/pen11.jpg",
       "category": "#B2P Gel IB2P",
       "img_pricing": "../img/pricing/pen11.png"
@@ -114,7 +114,7 @@ const listProduct = [
       "name": "Precise® V7 Premium Rolling Ball Pen (0.7mm)",
       "production_time": "7 working days",
       "manufacture_country": "Japan",
-      "price": "$2.30",
+      "price": 2.30,
       "image": "../img/pen/pen6.jpg",
       "category": "#Precise IPV7",
       "img_pricing": "../img/pricing/pen12.png"

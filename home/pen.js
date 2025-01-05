@@ -137,16 +137,16 @@ addToCart.addEventListener("click", handleAddToCart);
 
 const heart = document.getElementById("heart");
 let user = JSON.parse(localStorage.getItem('accountActive'));
-// let favorite = user.favorites.find;
+let favorite = false;
 function handleFavorite() {
     if (favorite) {
         heart.src = "../img/heart.png";
         // Xoá phần tử id product khỏi array favorite
-        updateAccountActive(user.username);
+        // updateAccountActive(user.username);
     } else {
         heart.src = "../img/heart (1).png";
         // Thêm phần tử id product vào array favorite
-        updateAccountActive(user.username);
+        // updateAccountActive(user.username);
     }
     favorite = !favorite;
 }
