@@ -23,6 +23,7 @@ if(cfpassword == password) {
             username: username,
             password: password,
             email: email,
+            favorites: []
         });
         localStorage.setItem('users', JSON.stringify(users));
         alert("Đăng ký tài khoản thành công!");

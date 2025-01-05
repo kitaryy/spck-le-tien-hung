@@ -3,7 +3,6 @@ const id = urlParams.get('id');
 const products = localStorage.getItem('products');
 const productsArray = JSON.parse(products); // chuyển đổi string thành array
 const product = productsArray.find(product => product.id == id); // tìm kiếm sản phẩm theo id
-console.log(product);
 document.getElementById('product-name').innerText = product.name;
 document.getElementById('product-category').innerText = product.category;
 document.getElementById('pen_image').src = product.image;
@@ -136,13 +135,28 @@ function handleAddToCart(){
 const addToCart = document.getElementById("add-to-cart");
 addToCart.addEventListener("click", handleAddToCart);
 
-document.getElementById("heartblack").addEventListener('click', function () {
-    document.getElementById("heartblack").style.display = "none";
-    document.getElementById("heartred").style.display = "block";
-});
+const heart = document.getElementById("heart");
+let user = JSON.parse(localStorage.getItem('accountActive'));
+// let favorite = user.favorites.find;
+function handleFavorite() {
+    if (favorite) {
+        heart.src = "../img/heart.png";
+        // Xoá phần tử id product khỏi array favorite
+        updateAccountActive(user.username);
+    } else {
+        heart.src = "../img/heart (1).png";
+        // Thêm phần tử id product vào array favorite
+        updateAccountActive(user.username);
+    }
+    favorite = !favorite;
+}
+heart.addEventListener("click", handleFavorite)
 
-document.getElementById("heartred").addEventListener('click', function () {
-    document.getElementById("heartred").style.display = "none";
-    document.getElementById("heartblack").style.display = "block";
-});
 
+function updateAccountActive(username) {
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].username == username) {
+            localStorage.setItem('accountActive', JSON.stringify(users[i]));
+        };
+    }
+}

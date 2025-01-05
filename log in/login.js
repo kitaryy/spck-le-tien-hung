@@ -11,6 +11,7 @@ document.getElementById("button-login").addEventListener('click', function () {
     let dem = 0;
     for (let i = 0; i < users.length; i++) {
         if (users[i].username == username && users[i].password == password) {
+            localStorage.setItem('accountActive', JSON.stringify(users[i]))
             alert("Đăng nhập thành công!");
             window.location.href = "../home/home.html";
         } else {
