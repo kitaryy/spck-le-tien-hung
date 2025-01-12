@@ -26,7 +26,7 @@ const listProduct = [
       "name": "FriXion® Light Erasable Highlighter",
       "production_time": "10 working days",
       "manufacture_country": "Japan",
-      "price": 1.72,
+      "price": 1.72,    
       "image": "../img/pen/pen3.jpg",
       "category": "#FriXion IFXL",
       "img_pricing": "../img/pricing/pen3.png",
@@ -210,7 +210,7 @@ sendButtonEl.addEventListener("click", () => {
 
     const headers = {
         "Content-Type": "application/json",
-        "X-Goog-Api-Key": "AIzaSyCU2n-SdwOsyoXeUw4hgXbwnuAZAEO6PcI",
+        "X-Goog-Api-Key": "AIzaSyChmRc4ti_p-7S2tliFBxm0AiwpnMRZCiE",
         "Connection": "keep-alive"
     };
 
